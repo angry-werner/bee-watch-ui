@@ -16,6 +16,7 @@
 *.launch
 .settings/
 *.sublime-workspace
+bee-watch-ui.iml
 
 # IDE - VSCode
 .vscode/*
