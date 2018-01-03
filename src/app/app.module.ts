@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-
 import { AppComponent } from './app.component';
 import { LocationsComponent } from './environment/locations/locations.component';
 
@@ -13,8 +11,7 @@ import { LocationsComponent } from './environment/locations/locations.component'
     LocationsComponent
   ],
   imports: [
-    BrowserModule,
-    NgxDatatableModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
