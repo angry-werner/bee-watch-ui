@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LocationsComponent } from './environment/locations/locations.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LocationsComponent } from './environment/locations/locations.component'
     LocationsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
