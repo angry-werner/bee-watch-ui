@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Location, Coordinate} from 'bee-watch-model/dist';
 
 @Component({
   selector: 'app-locations',
@@ -6,20 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./locations.component.css']
 })
 export class LocationsComponent implements OnInit {
+  locations: Location[];
 
   constructor() { }
 
   ngOnInit() {
+    this.locations = [
+      new Location('Sternwarte', new Coordinate(600000, 200000), 'Die alte berner Sternwarte'),
+      new Location('Sternwarze', new Coordinate(600001, 200001), 'Nicht ganz die alte berner Sternwarte')
+    ];
   }
-
-  rows = [
-    { name: 'Austin', gender: 'Male', company: 'Swimlane' },
-    { name: 'Dany', gender: 'Male', company: 'KFC' },
-    { name: 'Molly', gender: 'Female', company: 'Burger King' },
-  ];
-  columns = [
-    { prop: 'name' },
-    { name: 'Gender' },
-    { name: 'Company' }
-  ];
 }
