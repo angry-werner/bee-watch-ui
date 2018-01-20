@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
+  title = 'The Bee keepers bee watch application';
 
   ngOnInit() {}
-
-  title = 'The Bee keepers bee watch application';
 }

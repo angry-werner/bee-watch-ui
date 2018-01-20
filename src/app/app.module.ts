@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule} from '@angular/router';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { LocationsComponent } from './environment/locations/locations.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule} from '@angular/router';
 import { LandingPageComponent } from './shell/landing-page/landing-page.component';
+import { LocationsComponent } from './environment/locations/locations.component';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { LandingPageComponent } from './shell/landing-page/landing-page.componen
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
