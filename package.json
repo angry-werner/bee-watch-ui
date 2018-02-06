@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --single-run",
+    "watch": "ng test",
     "lint": "ng lint && node_modules/.bin/tslint --project .",
     "e2e": "ng e2e"
   },
